@@ -1,0 +1,24 @@
+{
+  "objectInfo" : {
+    "id" : "dc71FtSjM0LezKr1iQWTEM",
+    "name" : "SimpleProcess",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "40bdpsaaaa-gt-1639-2019-09-19T06:45:53.894Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ ]
+}
