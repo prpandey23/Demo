@@ -13,7 +13,7 @@
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "",
+        "description" : "this is description",
         "contentType" : "application/json; charset=utf-8",
         "documentState" : "VALID"
       }
