@@ -1,0 +1,92 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>g701BchMYeOm6S6-gt359574707911417856-2019-09-20T05:41:30.97Z::conn.xml</types1:EntryId>
+      <types1:Name>ConSFNew</types1:Name>
+      <types1:ParentFlowIds>pJ7XhFtybduaa-gt359574709152931840-2019-09-20T05:41:31.256Z::pd.xml,hJWjzDt0x7bcoq3-gt359574708586700800-2019-09-20T05:41:31.125Z::pd.xml,QQK5BjE7ppppppp-gt-6216-2019-09-24T11:33:34.683Z::pd.xml,UDKYsGuDoWn2sqe-gt-712188-2019-09-24T11:15:56.75Z::pd.xml,9RdtIS7T1cnFKi9-gt359574712193802240-2019-09-20T05:41:31.983Z::pd.xml,sS2DkSSHCwkNmum-gt-3300-2019-09-24T09:37:24.295Z::pd.xml,fTlGUGeFRqXpIW7-gt359574707408101376-2019-09-20T05:41:30.85Z::pd.xml,QhtGci3zymbduaa-gt359574706757984256-2019-09-20T05:41:30.686Z::pd.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+connection</types1:MimeType>
+      <types1:Description>test123</types1:Description>
+      <types1:AppliesTo/>
+      <types1:Tags>.agent:INW00007322</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>pramod</types1:CreatedBy>
+      <types1:CreationDate>2019-09-20T01:41:31Z</types1:CreationDate>
+      <types1:ModifiedBy>pramod</types1:ModifiedBy>
+      <types1:ModificationDate>2019-09-24T07:51:30Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>pramod</types1:PublishedBy>
+      <types1:PublicationDate>2019-09-24T07:55:48Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/rt.connection/ConSFNew/ConSFNew.conn.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <connection xmlns="http://schemas.informatica.com/socrates/data-services/2014/04/avosConnections.xsd"
+                     displayName="ConSFNew"
+                     label="ConSFNew"
+                     name="ConSFNew">
+            <description>test123</description>
+            <tags>.agent:INW00007322</tags>
+            <agent>INW00007322</agent>
+            <attributes/>
+            <consumers>
+               <consumer enabled="true" name="Source-Event" typeName="Source">
+                  <description>Use this event source to consume events from Salesforce streaming channels.</description>
+                  <attributes>
+                     <attribute encrypted="false" name="Destination" value="/event/AI_Event__e"/>
+                  </attributes>
+               </consumer>
+               <consumer enabled="true" name="source-Topic" typeName="Source">
+                  <description>Use this event source to consume events from Salesforce streaming channels.</description>
+                  <attributes>
+                     <attribute encrypted="false" name="Destination" value="/topic/AI_PushTopic"/>
+                  </attributes>
+               </consumer>
+               <consumer enabled="true" name="Source-AI-Event-2-New" typeName="Source">
+                  <description>Use this event source to consume events from Salesforce streaming channels.</description>
+                  <attributes>
+                     <attribute encrypted="false" name="Destination" value="/event/AI_Event_New__e"/>
+                  </attributes>
+               </consumer>
+            </consumers>
+            <producers>
+               <producer enabled="true" name="Target-2-AI-Event-New" typeName="Target">
+                  <description>Use this event target to publish messages to Salesforce streaming channels.</description>
+                  <attributes>
+                     <attribute encrypted="false" name="Destination" value="/event/AI_Event_New__e"/>
+                  </attributes>
+               </producer>
+               <producer enabled="true" name="Target" typeName="Target">
+                  <description>Use this event target to publish messages to Salesforce streaming channels.</description>
+                  <attributes>
+                     <attribute encrypted="false" name="Destination" value="/event/AI_Event__e"/>
+                  </attributes>
+               </producer>
+            </producers>
+            <soaConnector xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                          connectorPath="project:/com.activevos.cumulus.cloud.extend.playbook.configuration/config/sfConnector.xml"
+                          name="Salesforce"
+                          supportsConnectionTest="true"
+                          supportsOData="true"
+                          uuid="05fc48f1-e6e1-441b-b700-bac396ca2ed1">
+               <description>Salesforce.com SOA based data connector.</description>
+            </soaConnector>
+            <authentication type="$infa_basicform">
+               <attributes>
+                  <attribute encrypted="false" name="username" value="sfqa135@gmail.com"/>
+                  <attribute encrypted="true" name="password" value=""/>
+                  <attribute encrypted="true" name="token" value=""/>
+                  <attribute encrypted="false"
+                             name="serviceUrl"
+                             value="https://login.salesforce.com/services/Soap/c/40.0"/>
+                  <attribute encrypted="true" name="clientId" value=""/>
+                  <attribute encrypted="true" name="clientSecret" value=""/>
+               </attributes>
+            </authentication>
+         </connection>
+      </types1:Entry>
+      <types1:GUID>05I5KfNbShFj7NvTfDrtui</types1:GUID>
+      <types1:DisplayName>ConSFNew</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2019-09-27T11:28:47.774Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
