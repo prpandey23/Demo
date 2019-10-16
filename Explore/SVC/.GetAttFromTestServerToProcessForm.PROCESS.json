@@ -1,0 +1,24 @@
+{
+  "objectInfo" : {
+    "id" : "2cbwiLePi8GjJVmoJYoGwU",
+    "name" : "GetAttFromTestServerToProcessForm",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "oDdvrTdtqSLlBWl-gt-1133-2019-10-10T11:11:48.234Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "INVALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ ]
+}

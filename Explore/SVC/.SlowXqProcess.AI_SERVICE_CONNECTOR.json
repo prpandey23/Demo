@@ -1,0 +1,24 @@
+{
+  "objectInfo" : {
+    "id" : "7yJ1TUE8o5lbtY6241IHoU",
+    "name" : "SlowXqProcess",
+    "type" : "AI_SERVICE_CONNECTOR",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "glRoPzjlybduaa-gt-110534-2019-10-15T09:20:31.09Z::svc.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ ]
+}

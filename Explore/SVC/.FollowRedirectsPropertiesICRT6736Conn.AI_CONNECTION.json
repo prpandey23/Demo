@@ -1,0 +1,44 @@
+{
+  "objectInfo" : {
+    "id" : "0XlX1dt8wiUk0uouAQPva4",
+    "name" : "FollowRedirectsPropertiesICRT6736Conn",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "1Y8DglxbdypKwKB-gt-126789-2019-10-11T07:09:48.415Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ {
+    "id" : "3H6PO2Gyouzk0r1DTowKgs",
+    "name" : "FollowRedirectsPropertiesICRT6736",
+    "type" : "AI_SERVICE_CONNECTOR",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "p81V4AdypKwKBqR-gt-18326-2019-10-07T10:14:28.244Z::svc.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ]
+}

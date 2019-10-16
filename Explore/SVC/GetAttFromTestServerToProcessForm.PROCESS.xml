@@ -1,0 +1,78 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>oDdvrTdtqSLlBWl-gt-1133-2019-10-10T11:11:48.234Z::pd.xml</types1:EntryId>
+      <types1:Name>GetAttFromTestServerToProcessForm</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.anonymous,?</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>pramod</types1:CreatedBy>
+      <types1:CreationDate>2019-10-10T11:11:48Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  displayName="GetAttFromTestServerToProcessForm"
+                  name="GetAttFromTestServerToProcessForm">
+            <appliesTo/>
+            <description/>
+            <tags>?,.anonymous</tags>
+            <generator>Informatica Process Designer 9</generator>
+            <output>
+               <field description="" name="result" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="oAtt" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="normal">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="link1" targetId="c"/>
+               </start>
+               <service id="c">
+                  <serviceName>$none</serviceName>
+                  <serviceGUID/>
+                  <serviceInput/>
+                  <link id="ie9q87p2" targetId="ie9q87p1"/>
+               </service>
+               <service id="ie9q87p1">
+                  <title>FormPostSingleAttachment</title>
+                  <serviceName>PostTestServerConnection:FormPostSingleAttachment</serviceName>
+                  <serviceGUID/>
+                  <serviceInput>
+                     <parameter name="attachment" source="field" updatable="true">output.attachmentResponse</parameter>
+                  </serviceInput>
+                  <link id="ie9q87p3" targetId="ie9q87oy"/>
+               </service>
+               <assignment id="ie9q87oy">
+                  <title>Assignment to result</title>
+                  <operation source="field" to="output.result">output.response</operation>
+                  <operation source="field" to="output.oAtt">output.attachmentResponse</operation>
+                  <link id="ie9q87p5" targetId="d"/>
+               </assignment>
+               <end id="d"/>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>2cbwiLePi8GjJVmoJYoGwU</types1:GUID>
+      <types1:DisplayName>GetAttFromTestServerToProcessForm</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2019-10-16T12:13:20.827Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

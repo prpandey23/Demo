@@ -1,0 +1,484 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>hzFKbdtqSLlBWlD-gt-1123-2019-10-10T11:11:48.119Z::svc.xml</types1:EntryId>
+      <types1:Name>PostTestServerConnector</types1:Name>
+      <types1:MimeType>application/xml+businesssconnector</types1:MimeType>
+      <types1:Description>Publish ServiseForTest_not_anonim_policy.bpr from icrt_resources/General/HttpRestEchoService/ServiseForTest/deploy folder as aeadmin.</types1:Description>
+      <types1:AppliesTo/>
+      <types1:Tags>?,PostTest</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>pramod</types1:CreatedBy>
+      <types1:CreationDate>2019-10-10T11:11:48Z</types1:CreationDate>
+      <types1:ModifiedBy>pramod</types1:ModifiedBy>
+      <types1:ModificationDate>2019-10-10T11:20:26Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <businessConnector xmlns="http://schemas.informatica.com/socrates/data-services/2014/05/business-connector-model.xsd"
+                            agentOnly="false"
+                            debug="false"
+                            displayName="PostTestServerConnector"
+                            label=""
+                            name="PostTestServerConnector"
+                            uuid="203ce3b8-6b09-4bd4-9603-c0d3396253e8">
+            <description>Publish ServiseForTest_not_anonim_policy.bpr from icrt_resources/General/HttpRestEchoService/ServiseForTest/deploy folder as aeadmin.</description>
+            <tags>?,PostTest</tags>
+            <connectionAttributes xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd">
+               <connectionAttribute description=""
+                                    masked="false"
+                                    name="post_url55"
+                                    required="false"
+                                    testWith="http://ptsv2.com/t/0mcsc-1559650422"
+                                    type="string"/>
+               <connectionAttribute description=""
+                                    masked="false"
+                                    name="post_url"
+                                    required="false"
+                                    testWith="http://localhost:8080/active-bpel/public/services/REST/TestPostService"
+                                    type="string"/>
+            </connectionAttributes>
+            <actions>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="FormPostSingleAttachment"
+                       maxRedirects="100"
+                       name="FormPostSingleAttachment"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="attachment"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <body generateUsing="Form"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="FormPostSeveralParamsAndAttachments"
+                       maxRedirects="100"
+                       name="FormPostSeveralParamsAndAttachments"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="attachment1"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                     <parameter name="attachment2"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                     <parameter name="text1" required="false" testWith="df" type="string"/>
+                     <parameter name="text2" required="false" testWith="sdf" type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <body generateUsing="Form"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="FormPostSeveralParams"
+                       maxRedirects="100"
+                       name="FormPostSeveralParams"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="text1" required="false" testWith="pramod" type="string"/>
+                     <parameter name="text2" required="false" testWith="paney" type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <body generateUsing="Form"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="JsonPostSeveralParamsAndAttachments"
+                       maxRedirects="100"
+                       name="JsonPostSeveralParamsAndAttachments"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="attachment1"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                     <parameter name="attachment2"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                     <parameter name="text1" required="false" testWith="wer" type="string"/>
+                     <parameter name="text2" required="false" testWith="wer" type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <httpHeaders>
+                           <header name="Content-Type">application/json</header>
+                           <header name="Content-Disposition">form-data; name="json_binding"; filename="text.txt"</header>
+                        </httpHeaders>
+                        <body generateUsing="JSON" preserveJsonStringFormatting="false"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                     <field description="" name="request" type="string">
+                        <xquery/>
+                     </field>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="CustomPostSingleAttachment"
+                       maxRedirects="100"
+                       name="CustomPostSingleAttachment"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="attachment1"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <body/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="CustomPostBodyAndAttachment"
+                       maxRedirects="100"
+                       name="CustomPostBodyAndAttachment"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="attachment1"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <httpHeaders>
+                           <header name="Content-Type">text/plain</header>
+                        </httpHeaders>
+                        <body>&lt;a&gt;Custom Binding Body&lt;/a&gt;</body>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="CustomPostBodyAndAttachments"
+                       maxRedirects="100"
+                       name="CustomPostBodyAndAttachments"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="attachment1"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                     <parameter name="attachment2"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                     <parameter name="text1" required="false" testWith="param1" type="string"/>
+                     <parameter name="text2" required="false" testWith="param2" type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <httpHeaders>
+                           <header name="Content-Type">text/plain</header>
+                        </httpHeaders>
+                        <body>Body</body>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="CustomPostBody"
+                       maxRedirects="100"
+                       name="CustomPostBody"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input/>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <httpHeaders>
+                           <header name="Content-Type">text/plain</header>
+                        </httpHeaders>
+                        <body>&lt;a&gt;Hello&lt;/a&gt;</body>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="FormPutSeveralParamsAndAttachments"
+                       maxRedirects="100"
+                       name="FormPutSeveralParamsAndAttachments"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="attachment1"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                     <parameter name="attachment2"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                     <parameter name="text1" required="false" testWith="sadas" type="string"/>
+                     <parameter name="text2" required="false" testWith="asdasd" type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="PUT">
+                        <body generateUsing="Form"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description=""
+                            entireResponse="true"
+                            name="response"
+                            type="string"/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="CustomPutAttachment"
+                       maxRedirects="100"
+                       name="CustomPutAttachment"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="attachment1"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="PUT">
+                        <httpHeaders>
+                           <header name="Content-Type">text/xml</header>
+                        </httpHeaders>
+                        <body>&lt;a&gt;Body&lt;/a&gt;</body>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="GetAttachment"
+                       maxRedirects="100"
+                       name="GetAttachment"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input/>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated"
+                                        url="https://www.informatica.com/content/dam/informatica-com/global/amer/us/collateral/customer-success-story/banco-popular_customer-story_02122.pdf"
+                                        verb="GET"/>
+                  </binding>
+                  <output>
+                     <field attachment="true"
+                            description=""
+                            name="attachmentResponse"
+                            type="attachment"/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="FormPostSeveralAttachments"
+                       maxRedirects="100"
+                       name="FormPostSeveralAttachments"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="attachment1"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                     <parameter name="attachment2"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <body generateUsing="Form"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output/>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="FormPostSingleParam"
+                       maxRedirects="100"
+                       name="FormPostSingleParam"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="text" required="false" testWith="" type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <body generateUsing="Form"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="FormPostSingleParamAndAttachment"
+                       maxRedirects="100"
+                       name="FormPostSingleParamAndAttachment"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="attachment"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                     <parameter name="text" required="false" testWith="" type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <body generateUsing="Form"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="JSONPostSingleAttachment"
+                       maxRedirects="100"
+                       name="JSONPostSingleAttachment"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="attachment"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <body/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="JSONPostNoDispositionTextAttAndPar"
+                       maxRedirects="100"
+                       name="JSONPostNoDispositionTextAttAndPar"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="attachment"
+                                required="false"
+                                testWith=""
+                                type="attachment"/>
+                     <parameter name="text1" required="false" testWith="test" type="string"/>
+                     <parameter name="text2" required="false" testWith="jkh" type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$post_url}" verb="POST">
+                        <body generateUsing="JSON" preserveJsonStringFormatting="false"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="" name="response" type="string" xmlElement="."/>
+                  </output>
+               </action>
+            </actions>
+            <objects>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              isByCopy="true"
+                              name="post_server">
+                  <description/>
+                  <detail>
+                     <field name="url" type="string"/>
+                  </detail>
+               </processObject>
+            </objects>
+         </businessConnector>
+      </types1:Entry>
+      <types1:GUID>3Qo4ZDTkMgHhMbqY9h7QE6</types1:GUID>
+      <types1:DisplayName>PostTestServerConnector</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2019-10-16T12:13:20.933Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

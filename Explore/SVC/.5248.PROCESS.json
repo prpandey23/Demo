@@ -1,0 +1,24 @@
+{
+  "objectInfo" : {
+    "id" : "4OKFKRZ2uE4etcMOzfs2GD",
+    "name" : "5248",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "MpCtbdsreK8ZAZf-gt-9926-2019-10-10T10:57:31.618Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ ]
+}

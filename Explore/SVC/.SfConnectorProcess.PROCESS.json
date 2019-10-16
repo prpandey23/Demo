@@ -1,0 +1,44 @@
+{
+  "objectInfo" : {
+    "id" : "9feBDBT0zuZlRXKO1eTeO0",
+    "name" : "SfConnectorProcess",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "T6Pw97yV4AdypKw-gt-660077-2019-10-14T11:55:39.727Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ {
+    "id" : "3zCTFDAHybbfZNKNij31Qh",
+    "name" : "SfConnectorConnection",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "XoVonQYWeIssjql-gt-790495-2019-10-14T11:54:18.801Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/SVC"
+  } ]
+}
