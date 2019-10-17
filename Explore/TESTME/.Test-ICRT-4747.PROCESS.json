@@ -13,9 +13,9 @@
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : null,
-        "contentType" : "Binary",
-        "documentState" : "COMPLETE"
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
       }
     }
   },
