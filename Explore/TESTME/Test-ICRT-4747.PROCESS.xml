@@ -13,11 +13,8 @@
       <types1:CreatedBy>pramod</types1:CreatedBy>
       <types1:CreationDate>2019-10-10T07:52:01Z</types1:CreationDate>
       <types1:ModifiedBy>pramod</types1:ModifiedBy>
-      <types1:ModificationDate>2019-10-17T05:06:24Z</types1:ModificationDate>
-      <types1:PublicationStatus>published</types1:PublicationStatus>
-      <types1:PublishedBy>pramod</types1:PublishedBy>
-      <types1:PublicationDate>2019-10-17T05:06:28Z</types1:PublicationDate>
-      <types1:PublishedContributionId>project:/spi.Test-ICRT-4747/Test-ICRT-4747.pd.xml</types1:PublishedContributionId>
+      <types1:ModificationDate>2019-10-17T05:10:45Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
       <types1:AutosaveExists>false</types1:AutosaveExists>
       <types1:Entry>
          <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
@@ -107,5 +104,5 @@
       <types1:GUID>2aR5rZq5na6kblxsrFzYQx</types1:GUID>
       <types1:DisplayName>Test-ICRT-4747</types1:DisplayName>
    </types1:Item>
-   <types1:CurrentServerDateTime>2019-10-17T05:06:44.342Z</types1:CurrentServerDateTime>
+   <types1:CurrentServerDateTime>2020-01-02T11:47:55.017Z</types1:CurrentServerDateTime>
 </aetgt:getResponse>
