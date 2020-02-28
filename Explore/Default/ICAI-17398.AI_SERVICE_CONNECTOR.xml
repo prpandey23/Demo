@@ -1,0 +1,148 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>dsvvNtLSVMTonQY-gt-5178-2020-02-27T11:32:11.055Z::svc.xml</types1:EntryId>
+      <types1:Name>ICAI-17398</types1:Name>
+      <types1:MimeType>application/xml+businesssconnector</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>pramod5</types1:CreatedBy>
+      <types1:CreationDate>2020-02-27T11:32:11Z</types1:CreationDate>
+      <types1:ModifiedBy>pramod5</types1:ModifiedBy>
+      <types1:ModificationDate>2020-02-27T11:42:52Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <businessConnector xmlns="http://schemas.informatica.com/socrates/data-services/2014/05/business-connector-model.xsd"
+                            agentOnly="false"
+                            debug="false"
+                            displayName="ICAI-17398"
+                            label=""
+                            name="ICAI-17398"
+                            uuid="0d1efdae-24d8-4fea-af04-b51e34291cb5">
+            <description/>
+            <tags/>
+            <connectionAttributes xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd">
+               <connectionAttribute description=""
+                                    masked="false"
+                                    name="cXML_URL"
+                                    required="false"
+                                    testWith="http://mockbin.org/echo"
+                                    type="string"/>
+            </connectionAttributes>
+            <actions>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="testTC"
+                       maxRedirects="100"
+                       name="testTC"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input/>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated"
+                                        url="http://mockbin.org/echo"
+                                        verb="POST">
+                        <body>&amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;gt;
+&amp;lt;!DOCTYPE cXML SYSTEM "http://xml.cxml.org/schemas/cXML/1.1.010/cXML.dtd"&amp;gt;
+&amp;lt;cXML version="1.1.007" xml:lang="en-US" payloadID="200303450803006749@b2b.euro.com" timestamp="2003-01-12T08:03:00"&amp;gt;
+  &amp;lt;Response&amp;gt;
+    &amp;lt;Status code="200" text="OK" /&amp;gt;
+    &amp;lt;PunchOutSetupResponse&amp;gt;
+      &amp;lt;StartPage&amp;gt;
+        &amp;lt;URL&amp;gt;https://mygreatpunchoutsite.com/punchoutLogin.asp&amp;lt;/URL&amp;gt;
+      &amp;lt;/StartPage&amp;gt;
+    &amp;lt;/PunchOutSetupResponse&amp;gt;
+  &amp;lt;/Response&amp;gt;
+&amp;lt;/cXML&amp;gt;</body>
+                     </restSimpleBinding>
+                  </binding>
+                  <output/>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="cXml"
+                       maxRedirects="100"
+                       name="cXml"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="Identity"
+                                required="false"
+                                testWith="AN0123456789"
+                                type="string"/>
+                     <parameter name="SharedSecret"
+                                required="false"
+                                testWith="ItsSecret"
+                                type="string"/>
+                     <parameter name="PendingMessagesId"
+                                required="false"
+                                testWith="9876543210123456789"
+                                type="string"/>
+                     <parameter name="dtdUri"
+                                required="false"
+                                testWith="http://xml.cxml.org/schemas/cXML/1.2.025/cXML.dtd&amp;#34;"
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="{$cXML_URL}" verb="POST">
+                        <otherParams>
+                           <otherParam name="headerXmlStr">&amp;amp;lt;Header&amp;amp;gt;
+        &amp;amp;lt;From&amp;amp;gt;
+            &amp;amp;lt;Credential domain="NetworkID"&amp;amp;gt;
+                &amp;amp;lt;Identity&amp;amp;gt;{$Identity}&amp;amp;lt;/Identity&amp;amp;gt;
+            &amp;amp;lt;/Credential&amp;amp;gt;
+            &amp;amp;lt;Credential domain="EndPointID"&amp;amp;gt;
+                &amp;amp;lt;Identity&amp;amp;gt;us&amp;amp;lt;/Identity&amp;amp;gt;
+            &amp;amp;lt;/Credential&amp;amp;gt;
+        &amp;amp;lt;/From&amp;amp;gt;
+        &amp;amp;lt;To&amp;amp;gt;
+            &amp;amp;lt;Credential domain="NetworkID"&amp;amp;gt;
+                &amp;amp;lt;Identity&amp;amp;gt;{$Identity}&amp;amp;lt;/Identity&amp;amp;gt;
+            &amp;amp;lt;/Credential&amp;amp;gt;
+        &amp;amp;lt;/To&amp;amp;gt;
+        &amp;amp;lt;Sender&amp;amp;gt;
+            &amp;amp;lt;Credential domain="NetworkID"&amp;amp;gt;
+                &amp;amp;lt;Identity&amp;amp;gt;{$Identity}&amp;amp;lt;/Identity&amp;amp;gt;
+                &amp;amp;lt;SharedSecret&amp;amp;gt;{$SharedSecret}&amp;amp;lt;/SharedSecret&amp;amp;gt;
+            &amp;amp;lt;/Credential&amp;amp;gt;
+            &amp;amp;lt;UserAgent&amp;amp;gt;cXML_Demo Buyer Adapter&amp;amp;lt;/UserAgent&amp;amp;gt;
+        &amp;amp;lt;/Sender&amp;amp;gt;
+ &amp;amp;lt;/Header&amp;amp;gt;</otherParam>
+                           <otherParam name="requestXmlStr">&amp;lt;Request deploymentMode="test"&amp;gt;
+        &amp;lt;DataRequest&amp;gt;
+            &amp;lt;InternalID domain="PendingMessages"&amp;gt;{$PendingMessagesId}&amp;lt;/InternalID&amp;gt;
+        &amp;lt;/DataRequest&amp;gt;
+    &amp;lt;/Request&amp;gt;</otherParam>
+                           <otherParam name="cXmlStr">&amp;amp;lt;cXML payloadID="{util:generateUUID()}" timestamp="{string(fn:current-dateTime())}" xml:lang="en-US" version="1.2.025"&amp;amp;gt;
+{$headerXmlStr}
+{$requestXmlStr}
+&amp;amp;lt;/cXML&amp;amp;gt;</otherParam>
+                        </otherParams>
+                        <httpHeaders>
+                           <header name="Content-Type">text/xml; charset=UTF-8</header>
+                        </httpHeaders>
+                        <body>{let $dtd := concat('&amp;lt;!DOCTYPE cXML SYSTEM "', $dtdUri, '"&amp;gt;')
+let $xmlProlog := '&amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;gt;'
+return concat($xmlProlog, $dtd, $cXmlStr)}</body>
+                     </restSimpleBinding>
+                  </binding>
+                  <output/>
+               </action>
+            </actions>
+            <objects/>
+         </businessConnector>
+      </types1:Entry>
+      <types1:GUID>dRmGbIn5JiOgaZZ8Yo74GG</types1:GUID>
+      <types1:DisplayName>ICAI-17398</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2020-02-28T09:11:15.093Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
