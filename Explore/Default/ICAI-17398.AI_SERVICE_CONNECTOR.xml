@@ -13,7 +13,7 @@
       <types1:CreatedBy>pramod5</types1:CreatedBy>
       <types1:CreationDate>2020-02-27T11:32:11Z</types1:CreationDate>
       <types1:ModifiedBy>pramod5</types1:ModifiedBy>
-      <types1:ModificationDate>2020-02-27T11:42:52Z</types1:ModificationDate>
+      <types1:ModificationDate>2020-03-02T06:21:54Z</types1:ModificationDate>
       <types1:PublicationStatus>unpublished</types1:PublicationStatus>
       <types1:AutosaveExists>false</types1:AutosaveExists>
       <types1:Entry>
@@ -93,7 +93,7 @@
                                 type="string"/>
                   </input>
                   <binding>
-                     <restSimpleBinding url="{$cXML_URL}" verb="POST">
+                     <restSimpleBinding multiUsing="semicolonSeparated" url="{$cXML_URL}" verb="POST">
                         <otherParams>
                            <otherParam name="headerXmlStr">&amp;amp;lt;Header&amp;amp;gt;
         &amp;amp;lt;From&amp;amp;gt;
@@ -121,7 +121,7 @@
         &amp;lt;DataRequest&amp;gt;
             &amp;lt;InternalID domain="PendingMessages"&amp;gt;{$PendingMessagesId}&amp;lt;/InternalID&amp;gt;
         &amp;lt;/DataRequest&amp;gt;
-    &amp;lt;/Request&amp;gt;</otherParam>
+    &amp;lt;/Reques</otherParam>
                            <otherParam name="cXmlStr">&amp;amp;lt;cXML payloadID="{util:generateUUID()}" timestamp="{string(fn:current-dateTime())}" xml:lang="en-US" version="1.2.025"&amp;amp;gt;
 {$headerXmlStr}
 {$requestXmlStr}
@@ -130,8 +130,8 @@
                         <httpHeaders>
                            <header name="Content-Type">text/xml; charset=UTF-8</header>
                         </httpHeaders>
-                        <body>{let $dtd := concat('&amp;lt;!DOCTYPE cXML SYSTEM "', $dtdUri, '"&amp;gt;')
-let $xmlProlog := '&amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;gt;'
+                        <body>{let $dtd := concat('&lt;!DOCTYPE cXML SYSTEM "', $dtdUri, '"&gt;')
+let $xmlProlog := '&lt;?xml version="1.0" encoding="UTF-8"?&gt;'
 return concat($xmlProlog, $dtd, $cXmlStr)}</body>
                      </restSimpleBinding>
                   </binding>
@@ -144,5 +144,5 @@ return concat($xmlProlog, $dtd, $cXmlStr)}</body>
       <types1:GUID>dRmGbIn5JiOgaZZ8Yo74GG</types1:GUID>
       <types1:DisplayName>ICAI-17398</types1:DisplayName>
    </types1:Item>
-   <types1:CurrentServerDateTime>2020-02-28T09:11:15.093Z</types1:CurrentServerDateTime>
+   <types1:CurrentServerDateTime>2020-03-06T09:02:30.977Z</types1:CurrentServerDateTime>
 </aetgt:getResponse>
