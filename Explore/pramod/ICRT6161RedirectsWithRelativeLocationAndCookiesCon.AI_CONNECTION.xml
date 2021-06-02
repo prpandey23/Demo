@@ -1,0 +1,43 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>cnIQtEOvlp6oIuQ-gt-15569-2020-08-18T09:20:14.046Z::conn.xml</types1:EntryId>
+      <types1:Name>ICRT6161RedirectsWithRelativeLocationAndCookiesCon</types1:Name>
+      <types1:ParentFlowIds>UZaaaa-gt-43597-2020-08-18T09:20:14.747Z::pd.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+connection</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>ICRT6561RedirectsWithRelativeLocationAndCookies</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>pramod</types1:CreatedBy>
+      <types1:CreationDate>2020-08-18T09:20:14Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <connection xmlns="http://schemas.informatica.com/socrates/data-services/2014/04/avosConnections.xsd"
+                     displayName="ICRT6161RedirectsWithRelativeLocationAndCookiesCon"
+                     label="ICRT6161RedirectsWithRelativeLocationAndCookiesCon"
+                     name="ICRT6161RedirectsWithRelativeLocationAndCookiesCon">
+            <description/>
+            <tags>ICRT6561RedirectsWithRelativeLocationAndCookies</tags>
+            <agent/>
+            <attributes/>
+            <businessConnector xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                               agentOnly="false"
+                               connectorPath="project:/rt.connector/ICRT6561RedirectsWithRelativeLocationAndCookies/ICRT6561RedirectsWithRelativeLocationAndCookies_svcDef.xml"
+                               guid="5ZT1TSyJCUQd8pYtiRKqof"
+                               name="ICRT6561RedirectsWithRelativeLocationAndCookies"
+                               supportsConnectionTest="false"
+                               uuid="73dad104-6cca-4ebd-be8d-9efdada8f74c">
+               <description/>
+            </businessConnector>
+         </connection>
+      </types1:Entry>
+      <types1:GUID>2xVlzOWwP0ikU30QkQSfEL</types1:GUID>
+      <types1:DisplayName>ICRT6161RedirectsWithRelativeLocationAndCookiesCon</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2021-06-02T10:04:12.177Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
