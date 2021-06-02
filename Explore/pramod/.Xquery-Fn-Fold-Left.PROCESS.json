@@ -1,0 +1,24 @@
+{
+  "objectInfo" : {
+    "id" : "9oW76QRZ9u2h0w23DPbmaO",
+    "name" : "Xquery-Fn-Fold-Left",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "YkMJoGsF4Xkgbdo-gt-45048-2021-03-19T05:44:42.813Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ ]
+}

@@ -1,0 +1,149 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>YkMJoGsF4Xkgbdo-gt-45048-2021-03-19T05:44:42.813Z::pd.xml</types1:EntryId>
+      <types1:Name>Xquery-Fn-Fold-Left</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.anonymous</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>pramod</types1:CreatedBy>
+      <types1:CreationDate>2021-03-19T05:44:43Z</types1:CreationDate>
+      <types1:ModifiedBy>pramod</types1:ModifiedBy>
+      <types1:ModificationDate>2021-03-19T06:57:16Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>pramod</types1:PublishedBy>
+      <types1:PublicationDate>2021-03-19T06:57:20Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.Xquery-Fn-Fold-Left/Xquery-Fn-Fold-Left.pd.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  displayName="Xquery-Fn-Fold-Left"
+                  name="Xquery-Fn-Fold-Left"
+                  overrideAPIName="false">
+            <appliesTo/>
+            <description/>
+            <tags>.anonymous</tags>
+            <generator>Informatica Process Designer 11</generator>
+            <output>
+               <field description="return 21" name="untitled1" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="required">false</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+               <field description="returns 210. (This returns the product of the items in the sequence)."
+                      name="untitled2"
+                      type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="returns true(). (This returns true if any item in the sequence has an effective boolean value of true)."
+                      name="untitled3"
+                      type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="returns false(). (This returns true only if every item in the sequence has an effective boolean value of true)."
+                      name="untitled4"
+                      type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description=" returns (5,4,3,2,1). (This reverses the order of the items in a sequence)."
+                      name="untitled5"
+                      type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="untitled6" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description=" returns (2, 4, 6, 8, 10)."
+                      name="untitled7"
+                      type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description=" returns ()." name="untitled8" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="required">false</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+            </output>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="kmfvcr2y" targetId="kmfvcr2x"/>
+               </start>
+               <assignment id="kmfvcr2x">
+                  <title>Assignment to untitled1, untitled2 etc.</title>
+                  <operation source="formula" to="output.untitled1">
+                     <expression language="XQuery">fn:fold-left(1 to 6, 0, function($a, $b) { $a + $b })</expression>
+                  </operation>
+                  <operation source="formula" to="output.untitled2">
+                     <expression language="XQuery">fn:fold-left((2,3,5,7), 1, function($a, $b) { $a * $b })</expression>
+                  </operation>
+                  <operation source="formula" to="output.untitled3">
+                     <expression language="XQuery">fn:fold-left((true(), false(), false()), false(), function($a, $b) { $a or $b })</expression>
+                  </operation>
+                  <operation source="formula" to="output.untitled4">
+                     <expression language="XQuery">fn:fold-left((true(), false(), false()), false(), function($a, $b) { $a and $b })</expression>
+                  </operation>
+                  <link id="kmfvcr3w" targetId="kmfvcr3v"/>
+               </assignment>
+               <assignment id="kmfvcr3v">
+                  <title>Assignment to untitled5, untitled6 etc.</title>
+                  <operation source="formula" to="output.untitled5">
+                     <expression language="XQuery">fn:fold-left(1 to 5, (), function($a, $b) {($a, $b)})</expression>
+                  </operation>
+                  <operation source="formula" to="output.untitled6">
+                     <expression language="XQuery">fn:fold-right(1 to 5, (), function($a, $b) {($a, $b)})</expression>
+                  </operation>
+                  <operation source="formula" to="output.untitled7">
+                     <expression language="XQuery">fn:filter(1 to 10, function($a) {$a mod 2 = 0})</expression>
+                  </operation>
+                  <operation source="formula" to="output.untitled8">
+                     <expression language="XQuery">let $in-xml :=	
+&lt;desclist xml:lang="en"&gt;
+  &lt;desc xml:lang="en-US"&gt;
+     &lt;line&gt;A line of text.&lt;/line&gt;
+  &lt;/desc&gt;
+  &lt;desc xml:lang="fr"&gt;
+     &lt;line&gt;Une ligne de texte.&lt;/line&gt;
+  &lt;/desc&gt;
+&lt;/desclist&gt;
+return
+fn:filter((), $in-xml//
+    desc[lang('en')])</expression>
+                  </operation>
+                  <link id="kmfvcr3x" targetId="c"/>
+               </assignment>
+               <end id="c"/>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>9oW76QRZ9u2h0w23DPbmaO</types1:GUID>
+      <types1:DisplayName>Xquery-Fn-Fold-Left</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2021-06-02T07:02:58.55Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
