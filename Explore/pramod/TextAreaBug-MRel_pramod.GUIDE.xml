@@ -1,0 +1,217 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>wNRMloVVVVVVVVV-gt-86279-2020-07-21T11:54:39.355Z::gt.xml</types1:EntryId>
+      <types1:Name>TextAreaBug-MRel_pramod</types1:Name>
+      <types1:MimeType>application/xml+screenflow</types1:MimeType>
+      <types1:Description>This is pramod username</types1:Description>
+      <types1:AppliesTo>Salesforce:Account</types1:AppliesTo>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>pramod</types1:CreatedBy>
+      <types1:CreationDate>2020-07-21T11:54:39Z</types1:CreationDate>
+      <types1:ModifiedBy>pramod</types1:ModifiedBy>
+      <types1:ModificationDate>2021-04-27T10:25:53Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>pramod</types1:PublishedBy>
+      <types1:PublicationDate>2021-04-27T10:25:56Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/sf.TextAreaBug_MRel_pramod/TextAreaBug_MRel_pramod.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <avosScreenflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                         xmlns:list="urn:activevos:spi:list:functions"
+                         allowRestart="true"
+                         displayName="TextAreaBug-MRel_pramod"
+                         doneOnEndStep="false"
+                         name="TextAreaBug-MRel_pramod"
+                         runAsUser="$current">
+            <description>This is pramod username</description>
+            <appliesTo>Salesforce:Account</appliesTo>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <output>
+               <field description="" name="untitled1" type="attachment">
+                  <options>
+                     <option hide="true" name="count">1</option>
+                     <option name="maxsize">5242880</option>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="Percent" type="percent">
+                  <options>
+                     <option name="precision">5</option>
+                     <option name="scale">2</option>
+                     <option hide="true" name="min">0</option>
+                     <option hide="true" name="max">100</option>
+                     <option name="required">false</option>
+                     <option hide="true" name="initialvalue">12.5</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="null" name="Acc_list" type="objectlist">
+                  <options>
+                     <option name="referenceTo">Salesforce:Account</option>
+                     <option hide="true" name="multiSelect">true</option>
+                     <option name="required">false</option>
+                     <option name="guid">8eAbXBuEF7RiuFEMvTUUGV</option>
+                  </options>
+               </field>
+            </tempFields>
+            <runOn target="desktop"/>
+            <notes/>
+            <deployment/>
+            <sendFeedback>
+               <emailTo/>
+            </sendFeedback>
+            <flow>
+               <startScreen id="jd300kk3">
+                  <title>Start</title>
+                  <body contentType="text/html"/>
+                  <actions>
+                     <action alt="null" id="jd300kk3_jthjlgpf" targetScreen="jthjlgpf">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="true"/>
+               </startScreen>
+               <screen id="jthjlgpf">
+                  <title>Screen 1</title>
+                  <body contentType="text/html">&lt;p&gt;Welcome USE4&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;input class="" style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.Percent" readonly="readonly" type="text" value="Percent (output)"&gt;&amp;nbsp;&lt;br&gt;&lt;img style="width: 100px; height: 83px; float: right;" title="assigned.png" src="project:/com.activevos.cumulus.cloud.extend.playbook.resources/icons/assigned.png" alt="assigned.png"&gt;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null" id="jthjlgpf_jthjlgpl" targetScreen="jthjlgpl">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="output.Percent"
+                                     readonly="true"
+                                     required="false"
+                                     type="percent">
+                        <options>
+                           <option name="precision">5</option>
+                           <option name="scale">2</option>
+                           <option hide="true" name="min">0</option>
+                           <option hide="true" name="max">100</option>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="jthjlgpz">
+                  <title>Editable Field</title>
+                  <body contentType="text/html">&lt;p&gt;Acc_list &lt;input class="" name="temp.Acc_list" type="text" value="Acc_list (temporary)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Percent &lt;input name="output.Percent" type="text" value="Percent (output)"&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null" id="jthjlgpz_jthjlgq7" targetScreen="jthjlgq7">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="temp.Acc_list"
+                                     readonly="false"
+                                     renderingType="table"
+                                     required="false"
+                                     type="objectlist">
+                        <options>
+                           <option hide="true" name="referenceTo">Salesforce:Account</option>
+                           <option name="display-options">{"display-options":{"columns":{"column":[{"name":"Name","type":"string","label":"Account Name","renderingType":"string"},{"name":"Phone","type":"phone","label":"Account Phone","renderingType":"phone","options":{"option":[{"name":"format","$t":""}]}},{"name":"Description","type":"textarea","label":"Account Description","renderingType":"textarea"},{"name":"Type","type":"picklist","label":"Account Type","renderingType":"picklist"},{"name":"Site","type":"string","label":"Account Site","renderingType":"string"},{"name":"BillingCountry","type":"string","label":"Billing Country","renderingType":"string"},{"name":"Website","type":"url","label":"Website","renderingType":"url","options":{"option":[{"name":"urlDisplayReadonlyAs","$t":"Link"}]}},{"name":"Pramod_GeoLocation__c","type":"string","label":"Pramod_GeoLocation","renderingType":"string"},{"name":"Pramod_richTextArea__c","type":"richtextarea","label":"Pramod_richTextArea","renderingType":"richtextarea","options":{"option":[]}}]},"rendering-type":{"table-style":null,"height":null},"allow_pagination":true,"allow_filtering":false,"allow_sorting":true}}</option>
+                           <option hide="true" name="multiSelect">true</option>
+                           <option name="required">false</option>
+                           <option name="guid">1sKurj2lGwad0AcmbzWMWH</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="output.Percent"
+                                     readonly="false"
+                                     required="false"
+                                     type="percent">
+                        <options>
+                           <option name="precision">5</option>
+                           <option name="scale">2</option>
+                           <option hide="true" name="min">0</option>
+                           <option hide="true" name="max">100</option>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="jthjlgq7">
+                  <title>Read only</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;input class="" style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.Acc_list" readonly="readonly" type="text" value="Acc_list (temporary)"&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null" id="jthjlgq7_jd4cwa59" targetScreen="jd4cwa59">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="temp.Acc_list"
+                                     readonly="true"
+                                     renderingType="table"
+                                     required="false"
+                                     type="objectlist">
+                        <options>
+                           <option hide="true" name="referenceTo">Salesforce:Account</option>
+                           <option name="display-options">{"display-options":{"columns":{"column":[{"name":"Name","type":"string","label":"Account Name","renderingType":"string"},{"name":"Description","type":"textarea","label":"Account Description","renderingType":"textarea"},{"name":"Rating","type":"picklist","label":"Account Rating","renderingType":"picklist"},{"name":"BillingCity","type":"string","label":"Billing City","renderingType":"string"},{"name":"Website","type":"url","label":"Website","renderingType":"url","options":{"option":[{"name":"urlDisplayReadonlyAs","$t":"Link"}]}},{"name":"Pramod_GeoLocation__c","type":"string","label":"Pramod_GeoLocation","renderingType":"string"},{"name":"Pramod_richTextArea__c","type":"richtextarea","label":"Pramod_richTextArea","renderingType":"richtextarea","options":{"option":[]}}]},"rendering-type":{"table-style":null,"height":null},"allow_pagination":true,"allow_filtering":false,"allow_sorting":true}}</option>
+                           <option hide="true" name="multiSelect">true</option>
+                           <option name="required">false</option>
+                           <option name="guid">1sKurj2lGwad0AcmbzWMWH</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <endScreen id="jd4cwa59">
+                  <title>End</title>
+                  <body contentType="text/html"/>
+                  <redirectTo type="current_object"/>
+                  <screenActionLabel>
+                     <text/>
+                  </screenActionLabel>
+               </endScreen>
+               <assignment id="jthjlgpl">
+                  <title>Assignment to Acc_list, untitled1</title>
+                  <operation source="list" to="temp.Acc_list">
+                     <query advanceQuery="false" from="Salesforce:Account">
+                        <where>Id = '{'0012v00002UOLtdAAH'}'</where>
+                     </query>
+                  </operation>
+                  <operation source="screen" to="output.untitled1">screen.output.untitled1</operation>
+                  <screen id="jthjlgpl-servicescreen">
+                     <title>Assignment to Acc_list, untitled1</title>
+                     <body contentType="text/html">&lt;p&gt;&lt;span id="ae-sf-viewer-screen-body-untitled1-field-label"&gt;untitled1&lt;/span&gt; &lt;input title="Edit a field to change the field properties." name="screen.output.untitled1" type="text" value="untitled1"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</body>
+                     <actionPrompt/>
+                     <actions/>
+                     <screenData skipIfRequiredFilled="false">
+                        <screenDataItem name="screen.output.untitled1"
+                                        readonly="false"
+                                        required="false"
+                                        type="attachment">
+                           <options>
+                              <option hide="true" name="count">1</option>
+                              <option name="maxsize">5242880</option>
+                              <option name="required">false</option>
+                           </options>
+                        </screenDataItem>
+                     </screenData>
+                  </screen>
+                  <actions>
+                     <action alt="null" id="jthjlgpl_jthjlgpz" targetScreen="jthjlgpz">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+            </flow>
+         </avosScreenflow>
+      </types1:Entry>
+      <types1:GUID>d3rKTgtJ1Mmiy8G1qQ6tEd</types1:GUID>
+      <types1:DisplayName>TextAreaBug-MRel_pramod</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2021-06-17T08:00:09.128Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
