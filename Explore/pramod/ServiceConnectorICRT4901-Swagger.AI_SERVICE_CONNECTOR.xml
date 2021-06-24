@@ -1,0 +1,143 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>93PYhJmojDXJqEh-gt-55727-2021-03-31T08:12:24.974Z::svc.xml</types1:EntryId>
+      <types1:Name>ServiceConnectorICRT4901-Swagger</types1:Name>
+      <types1:ParentFlowIds>EA7vNljLYqBGZkL-gt-48885-2021-03-31T08:13:12.484Z::conn.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+businesssconnector</types1:MimeType>
+      <types1:Description>Test swagger demo</types1:Description>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>pramod</types1:CreatedBy>
+      <types1:CreationDate>2021-03-31T08:12:25Z</types1:CreationDate>
+      <types1:ModifiedBy>pramod</types1:ModifiedBy>
+      <types1:ModificationDate>2021-06-24T06:25:55Z</types1:ModificationDate>
+      <types1:PublicationStatus>out-of-date</types1:PublicationStatus>
+      <types1:PublishedBy>pramod</types1:PublishedBy>
+      <types1:PublicationDate>2021-03-31T08:12:29Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/rt.connector/ServiceConnectorICRT4901_Swagger/ServiceConnectorICRT4901_Swagger_svcDef.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <businessConnector xmlns="http://schemas.informatica.com/socrates/data-services/2014/05/business-connector-model.xsd"
+                            agentOnly="false"
+                            debug="false"
+                            displayName="ServiceConnectorICRT4901-Swagger"
+                            label=""
+                            name="ServiceConnectorICRT4901-Swagger"
+                            uuid="d33063dc-dbc5-45ee-9691-38a8e657debc">
+            <description>Test swagger demo</description>
+            <tags/>
+            <connectionAttributes xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd">
+               <connectionAttribute description="Host Name"
+                                    masked="false"
+                                    name="hostName"
+                                    required="true"
+                                    testWith="pod1-cai.mrel.infaqa.com"
+                                    type="string"/>
+            </connectionAttributes>
+            <actions>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="Add"
+                       maxRedirects="100"
+                       name="Add"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description>Adds two numbers</description>
+                  <input>
+                     <parameter description="Two numbers to add"
+                                label="body"
+                                name="body"
+                                required="true"
+                                testWith=""
+                                type="reference">
+                        <options>
+                           <option name="referenceTo">Add</option>
+                        </options>
+                     </parameter>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated"
+                                        url="https://{$hostName}/active-bpel/public/services/REST/restMathTestService"
+                                        verb="POST">
+                        <httpHeaders>
+                           <header name="Content-Type">application/json</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body generateUsing="UnwrappedJSON" preserveJsonStringFormatting="false"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="successful operation"
+                            entireResponse="true"
+                            name="AddResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">AddResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+            </actions>
+            <objects>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              isByCopy="true"
+                              name="Add">
+                  <description/>
+                  <detail>
+                     <field name="a" type="int"/>
+                     <field name="b" type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              isByCopy="true"
+                              name="AddResponse">
+                  <description/>
+                  <detail>
+                     <field name="result" type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              isByCopy="true"
+                              name="string">
+                  <description/>
+                  <detail>
+                     <field name="string" type="string"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              isByCopy="true"
+                              name="boolean">
+                  <description/>
+                  <detail>
+                     <field name="boolean" type="boolean"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              isByCopy="true"
+                              name="double">
+                  <description/>
+                  <detail>
+                     <field name="double" type="double"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              isByCopy="true"
+                              name="integer">
+                  <description/>
+                  <detail>
+                     <field name="integer" type="int"/>
+                  </detail>
+               </processObject>
+            </objects>
+         </businessConnector>
+      </types1:Entry>
+      <types1:GUID>9aNhxUi9O8OiywY8FpayKw</types1:GUID>
+      <types1:DisplayName>ServiceConnectorICRT4901-Swagger</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2021-06-24T06:27:16.829Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
