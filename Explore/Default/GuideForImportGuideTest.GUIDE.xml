@@ -1,0 +1,142 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>LFJ2oTVMTonQYWe-gt-25373-2021-08-11T06:25:07.604Z::gt.xml</types1:EntryId>
+      <types1:Name>GuideForImportGuideTest</types1:Name>
+      <types1:MimeType>application/xml+screenflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>yusingh</types1:CreatedBy>
+      <types1:CreationDate>2021-08-11T06:25:08Z</types1:CreationDate>
+      <types1:ModifiedBy>yusingh</types1:ModifiedBy>
+      <types1:ModificationDate>2021-08-11T06:29:06Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <avosScreenflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                         xmlns:list="urn:activevos:spi:list:functions"
+                         allowRestart="true"
+                         displayName="GuideForImportGuideTest"
+                         doneOnEndStep="false"
+                         name="GuideForImportGuideTest"
+                         runAsUser="$current">
+            <description/>
+            <appliesTo/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description=""
+                          name="untitled1"
+                          required="false"
+                          type="reference">
+                  <options>
+                     <option name="referenceTo">ConnForImportGuideTest:DemoPO1</option>
+                     <option name="required">false</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">3LsyHTKk6kVjximUQjtR8m</option>
+                  </options>
+               </parameter>
+            </input>
+            <runOn target="desktop"/>
+            <notes/>
+            <deployment/>
+            <sendFeedback>
+               <emailTo/>
+            </sendFeedback>
+            <flow>
+               <startScreen id="jd300kk3">
+                  <title>Start</title>
+                  <body contentType="text/html"/>
+                  <actions>
+                     <action alt="" id="jd300kk3_ks741svy" targetScreen="ks741svy">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="true"/>
+               </startScreen>
+               <screen id="ks741svy">
+                  <title>Screen 1</title>
+                  <body contentType="text/html">&lt;p&gt;untitled1&amp;gt;name &lt;input name="input.untitled1[1]/name" type="text" value="untitled1&gt;name"&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="" id="ks741svy_ks741sw5" targetScreen="ks741sw5">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="input.untitled1[1]/name"
+                                     readonly="false"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="ks741swj">
+                  <title>Screen 2</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="input.untitled1[1]/name" readonly="readonly" type="text" value="untitled1&gt;name"&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="" id="ks741swj_ks741swe" targetScreen="ks741swe">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="input.untitled1[1]/name"
+                                     readonly="true"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <endScreen id="jd4cwa59">
+                  <title>End</title>
+                  <body contentType="text/html"/>
+                  <redirectTo type="current_object"/>
+                  <screenActionLabel>
+                     <text/>
+                  </screenActionLabel>
+               </endScreen>
+               <empty gatewayType="exclusive" id="ks741swe">
+                  <actions>
+                     <action alt="" id="ks741swe_jd4cwa59" targetScreen="jd4cwa59">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </empty>
+               <jumpTo id="ks741swo" targetTitle="Screen 1">
+                  <actions>
+                     <action alt="null" id="ks741swo_ks741svy" targetScreen="ks741svy">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </jumpTo>
+               <dataDecision id="ks741sw5">
+                  <title>name</title>
+                  <dataName>input.untitled1[1]/name</dataName>
+                  <actions>
+                     <action alt="equals 1" id="ks741sw5_ks741swj" targetScreen="ks741swj">
+                        <text>Equals 1</text>
+                     </action>
+                     <action alt="else " id="ks741sw5_ks741swo" targetScreen="ks741swo">
+                        <text>Otherwise</text>
+                     </action>
+                  </actions>
+               </dataDecision>
+            </flow>
+         </avosScreenflow>
+      </types1:Entry>
+      <types1:GUID>3h3URVNc9LRjVlLiaUCZkw</types1:GUID>
+      <types1:DisplayName>GuideForImportGuideTest</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2021-08-29T11:00:09.932Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

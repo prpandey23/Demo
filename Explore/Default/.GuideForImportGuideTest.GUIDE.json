@@ -1,0 +1,44 @@
+{
+  "objectInfo" : {
+    "id" : "3h3URVNc9LRjVlLiaUCZkw",
+    "name" : "GuideForImportGuideTest",
+    "type" : "GUIDE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "LFJ2oTVMTonQYWe-gt-25373-2021-08-11T06:25:07.604Z::gt.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ {
+    "id" : "3LsyHTKk6kVjximUQjtR8m",
+    "name" : "ConnForImportGuideTest",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "45x8iaaabbeJOSM-gt-40473-2021-08-11T05:34:33.888Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ]
+}

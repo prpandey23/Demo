@@ -1,0 +1,142 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>Sckbclopz4KhPVE-gt-9326-2021-08-29T10:47:35.721Z::po.xml</types1:EntryId>
+      <types1:Name>PO-5</types1:Name>
+      <types1:MimeType>application/xml+processobject</types1:MimeType>
+      <types1:Description>Test git</types1:Description>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>yusingh</types1:CreatedBy>
+      <types1:CreationDate>2021-08-29T10:47:36Z</types1:CreationDate>
+      <types1:ModifiedBy>yusingh</types1:ModifiedBy>
+      <types1:ModificationDate>2021-08-29T10:57:48Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                        displayName="PO-5"
+                        isByCopy="true"
+                        name="PO-5">
+            <description>Test git</description>
+            <tags/>
+            <detail>
+               <field label="Attachment_lb"
+                      name="Attachment"
+                      nullable="true"
+                      required="false"
+                      type="attachment"/>
+               <field label="Attachments_lb"
+                      name="Attachments"
+                      nullable="true"
+                      required="false"
+                      type="attachments"/>
+               <field label="CheckBox_lb"
+                      name="CheckBox"
+                      nullable="true"
+                      required="false"
+                      type="boolean"/>
+               <field label="Currency_lb"
+                      name="Currency"
+                      nullable="true"
+                      required="false"
+                      type="currency"/>
+               <field label="Date_lb"
+                      name="Date"
+                      nullable="true"
+                      required="false"
+                      type="date"/>
+               <field label="DateTime_lb"
+                      name="DateTime"
+                      nullable="true"
+                      required="false"
+                      type="datetime"/>
+               <field label="Email_lb"
+                      name="Email"
+                      nullable="true"
+                      required="false"
+                      type="email"/>
+               <field label="FormattedText_lb"
+                      name="FormattedText"
+                      nullable="true"
+                      required="false"
+                      type="formattedString"/>
+               <field label="Image_lb"
+                      name="Image"
+                      nullable="true"
+                      required="false"
+                      type="image"/>
+               <field label="Int_lb"
+                      name="Int"
+                      nullable="true"
+                      required="false"
+                      type="int"/>
+               <field label="MultiSelectPicklist_lb"
+                      name="MultiSelectPicklist"
+                      nullable="true"
+                      required="false"
+                      type="multipicklist">
+                  <options>
+                     <option name="values">[{"value":"a","label":"a"},{"value":"b","label":"b"},{"value":"c","label":"c"}]</option>
+                  </options>
+               </field>
+               <field label="Number_lb"
+                      name="Number"
+                      nullable="true"
+                      required="false"
+                      type="double"/>
+               <field label="Percent"
+                      name="Percent"
+                      nullable="true"
+                      required="false"
+                      type="percent"/>
+               <field label="Phoen_lb"
+                      name="Phoen"
+                      nullable="true"
+                      required="false"
+                      type="phone"/>
+               <field label="Pikclist_lb"
+                      name="Pikclist"
+                      nullable="true"
+                      required="false"
+                      type="picklist">
+                  <options>
+                     <option name="values">[{"value":"d","label":"d"},{"value":"e","label":"e"},{"value":"f","label":"f"}]</option>
+                  </options>
+               </field>
+               <field label="RichTextArea_lb"
+                      name="RichTextArea"
+                      nullable="true"
+                      required="false"
+                      type="richtextarea"/>
+               <field label="Text_lb"
+                      name="Text"
+                      nullable="true"
+                      required="false"
+                      type="string"/>
+               <field label="TextArea_lb"
+                      name="TextArea"
+                      nullable="true"
+                      required="false"
+                      type="textarea"/>
+               <field label="Time_lb"
+                      name="Time"
+                      nullable="true"
+                      required="false"
+                      type="time"/>
+               <field label="URL_lb"
+                      name="URL"
+                      nullable="true"
+                      required="false"
+                      type="url"/>
+            </detail>
+         </processObject>
+      </types1:Entry>
+      <types1:GUID>aUE54z1ZObWh7iAA7hZSuA</types1:GUID>
+      <types1:DisplayName>PO-5</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2021-08-29T11:00:09.701Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
