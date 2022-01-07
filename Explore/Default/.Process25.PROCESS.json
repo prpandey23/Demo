@@ -1,0 +1,24 @@
+{
+  "objectInfo" : {
+    "id" : "82I4Xt0gpwedrWIvCHsi8m",
+    "name" : "Process25",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "ckdqtRuImXycotF-gt-658-2022-01-03T13:18:05.304Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ ]
+}

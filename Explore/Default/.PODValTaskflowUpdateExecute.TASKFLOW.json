@@ -13,9 +13,9 @@
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "hello",
+        "description" : "hello world",
         "contentType" : "application/json; charset=utf-8",
-        "documentState" : "VALID"
+        "documentState" : "INVALID"
       }
     }
   },
