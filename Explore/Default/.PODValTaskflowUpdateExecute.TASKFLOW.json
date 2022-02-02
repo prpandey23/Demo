@@ -13,7 +13,7 @@
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "hello world",
+        "description" : "hello world hi",
         "contentType" : "application/json; charset=utf-8",
         "documentState" : "INVALID"
       }
@@ -132,9 +132,12 @@
       "repoInfo" : {
         "repoHandle" : "01000M0I00000000004V"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "Hello",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
