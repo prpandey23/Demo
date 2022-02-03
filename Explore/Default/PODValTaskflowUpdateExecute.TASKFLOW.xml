@@ -1,34 +1,28 @@
 <aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
                    xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
    <types1:Item>
-      <types1:EntryId>dqDdvrTdtqSLlBW-gt-24520-2021-11-26T05:36:02.052Z::tf.xml</types1:EntryId>
-      <types1:Name>PODValTaskflowUpdateExecute-2</types1:Name>
+      <types1:EntryId>N1wKqxKf3eFhBJQ-gt-18131-2022-02-03T11:12:51.639Z::tf.xml</types1:EntryId>
+      <types1:Name>PODValTaskflowUpdateExecute</types1:Name>
       <types1:MimeType>application/xml+taskflow</types1:MimeType>
-      <types1:Description>hello world hi</types1:Description>
+      <types1:Description/>
       <types1:AppliesTo/>
       <types1:Tags/>
       <types1:VersionLabel>1.0</types1:VersionLabel>
       <types1:State>CURRENT</types1:State>
       <types1:ProcessGroup/>
-      <types1:CreatedBy>skrishtipati@infa.com</types1:CreatedBy>
-      <types1:CreationDate>2021-11-26T05:36:02Z</types1:CreationDate>
-      <types1:ModifiedBy>skrishtipati@infa.com</types1:ModifiedBy>
-      <types1:ModificationDate>2022-02-02T13:28:23Z</types1:ModificationDate>
-      <types1:PublicationStatus>out-of-date</types1:PublicationStatus>
-      <types1:PublishedBy>skrishtipati@infa.com</types1:PublishedBy>
-      <types1:PublicationDate>2022-02-02T13:14:02Z</types1:PublicationDate>
-      <types1:PublishedContributionId>project:/tf.PODValTaskflowUpdateExecute-2/PODValTaskflowUpdateExecute-2.tf.xml</types1:PublishedContributionId>
+      <types1:CreatedBy>ipatil_pod2</types1:CreatedBy>
+      <types1:CreationDate>2022-02-03T11:12:52Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
       <types1:AutosaveExists>false</types1:AutosaveExists>
       <types1:Entry>
          <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
-                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
                    xmlns:list="urn:activevos:spi:list:functions"
                    displayName="PODValTaskflowUpdateExecute"
-                   name="PODValTaskflowUpdateExecute-2"
+                   name="PODValTaskflowUpdateExecute"
                    overrideAPIName="false">
-            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
             <appliesTo/>
-            <description>hello world hi</description>
+            <description/>
             <tags/>
             <generator>Informatica Process Designer 11</generator>
             <input>
@@ -51,21 +45,17 @@
                </field>
                <field description="" name="File Watch Task 1" type="reference">
                   <options>
-                     <option name="referenceTo">$po:hkfl-4ApJDPxKpM3fB6fyFzZxub</option>
+                     <option name="referenceTo">$po:hkfl-9VvRujetSBjlIj0jdcCLyW</option>
                   </options>
                </field>
                <field description="" name="Command Task 1" type="reference">
                   <options>
                      <option name="referenceTo">$po:INFA-commandTask</option>
-                     <option name="failOnNotRun">false</option>
-                     <option name="failOnFault">false</option>
                   </options>
                </field>
                <field description="" name="Data Task 3" type="reference">
                   <options>
-                     <option name="referenceTo">$po:PCTask-Demo1</option>
-                     <option name="failOnNotRun">false</option>
-                     <option name="failOnFault">false</option>
+                     <option name="referenceTo">$po:PC-Task</option>
                   </options>
                </field>
             </tempFields>
@@ -93,7 +83,7 @@
                               <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
                               <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
                               <parameter name="Task Name" source="constant" updatable="true">MCT_Auto1</parameter>
-                              <parameter name="GUID" source="constant" updatable="true">aOCSe4tRFy0juYbsv3iAiP</parameter>
+                              <parameter name="GUID" source="constant" updatable="true">9iA4njN27ptbVtsPafCd0Y</parameter>
                               <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
                               <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
                               <parameter name="taskField" source="nested">
@@ -145,12 +135,12 @@
                                  <serviceInput>
                                     <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
                                     <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
-                                    <parameter name="Task Name" source="constant" updatable="true">PCTask_Demo1</parameter>
-                                    <parameter name="GUID" source="constant" updatable="true">6LUxKWk6Qdohvu8yY4PZ4G</parameter>
+                                    <parameter name="Task Name" source="constant" updatable="true">PC_Task</parameter>
+                                    <parameter name="GUID" source="constant" updatable="true">0WQTKey44cTg1QJwhbhZ0I</parameter>
                                     <parameter name="Task Type" source="constant" updatable="true">SAAS_PCTASK</parameter>
-                                    <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                    <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
                                     <parameter name="taskField" source="nested">
-                                       <operation source="field" to="PCTask-Demo1">temp.Data Task 3</operation>
+                                       <operation source="field" to="PC-Task">temp.Data Task 3</operation>
                                     </parameter>
                                  </serviceInput>
                                  <serviceOutput>
@@ -166,10 +156,6 @@
                                     <operation source="field" to="temp.Data Task 3/output/Start_Time">Start Time</operation>
                                     <operation source="field" to="temp.Data Task 3/output/End_Time">End Time</operation>
                                     <operation source="field" to="temp.Data Task 3/output/Error_Message">Error Message</operation>
-                                    <operation source="field" to="temp.Data Task 3/output/TotalTransErrors">Total Transformation Errors</operation>
-                                    <operation source="field" to="temp.Data Task 3/output/FirstErrorCode">First Error Code</operation>
-                                    <operation source="field" to="temp.Data Task 3/inout/c_name">c_name</operation>
-                                    <operation source="field" to="temp.Data Task 3/inout/c_custkey">c_custkey</operation>
                                  </serviceOutput>
                               </service>
                               <events>
@@ -228,15 +214,15 @@
                               <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
                               <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
                               <parameter name="Task Name" source="constant" updatable="true">hkfl</parameter>
-                              <parameter name="GUID" source="constant" updatable="true">4ApJDPxKpM3fB6fyFzZxub</parameter>
+                              <parameter name="GUID" source="constant" updatable="true">9VvRujetSBjlIj0jdcCLyW</parameter>
                               <parameter name="Task Type" source="constant" updatable="true">MI_FILE_LISTENER</parameter>
                               <parameter name="serviceProviderId" source="constant" updatable="true">filelistener</parameter>
                               <parameter name="serviceProviderContextPath"
                                          source="constant"
                                          updatable="true">filelistener/</parameter>
                               <parameter name="taskField" source="nested">
-                                 <operation source="field" to="hkfl-4ApJDPxKpM3fB6fyFzZxub">temp.File Watch Task 1</operation>
-                                 <operation source="constant" to="hkfl-4ApJDPxKpM3fB6fyFzZxub/input[1]/timeOut">1</operation>
+                                 <operation source="field" to="hkfl-9VvRujetSBjlIj0jdcCLyW">temp.File Watch Task 1</operation>
+                                 <operation source="constant" to="hkfl-9VvRujetSBjlIj0jdcCLyW/input[1]/timeOut">1</operation>
                               </parameter>
                               <parameter name="RuntimeEnvGUID" source="constant" updatable="true"/>
                            </serviceInput>
@@ -263,7 +249,7 @@
                               <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
                               <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
                               <parameter name="Task Name" source="constant" updatable="true">DSS_Auto</parameter>
-                              <parameter name="GUID" source="constant" updatable="true">cA48fjDJnM3intQlxpfty2</parameter>
+                              <parameter name="GUID" source="constant" updatable="true">kyp67LQhIcJfqOvhmyEkgj</parameter>
                               <parameter name="Task Type" source="constant" updatable="true">SAAS_DSS</parameter>
                               <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
                               <parameter name="taskField" source="nested">
@@ -307,11 +293,11 @@
                            <serviceInput>
                               <parameter name="Task Name" source="constant">Command Task 1</parameter>
                               <parameter name="Wait for Task to Complete" source="constant">true</parameter>
-                              <parameter name="Runtime Environment" source="constant">01000M25000000000003:inRHEL74QA601</parameter>
-                              <parameter name="Script Name" source="constant">/export/home/cloudqa/cmdTask/fileExists.sh</parameter>
+                              <parameter name="Runtime Environment" source="constant"/>
+                              <parameter name="Script Name" source="constant"/>
                               <parameter name="Input Arguments" source="constant"/>
-                              <parameter name="Work Directory" source="constant">sd</parameter>
-                              <parameter name="RuntimeEnvGUID" source="constant">6b7JiaWYyW5iMNsj9Sb9OZ</parameter>
+                              <parameter name="Work Directory" source="constant"/>
+                              <parameter name="RuntimeEnvGUID" source="constant"/>
                            </serviceInput>
                            <serviceOutput>
                               <operation source="field" to="temp.Command Task 1/output/Run_Id">Run Id</operation>
@@ -345,8 +331,8 @@
                      </wait>
                      <subflow id="ki49w4xc">
                         <title>SubTFForPodValidations</title>
-                        <subflowGUID>4droqwV6myCbEzvF0hJkKc</subflowGUID>
-                        <subflowPath>SubTFForPodValidations-3</subflowPath>
+                        <subflowGUID>bJ819k53uqnkWtf9bqQJ6g</subflowGUID>
+                        <subflowPath>SubTFForPodValidations</subflowPath>
                         <runForEach>false</runForEach>
                         <input/>
                         <outputDef/>
@@ -367,21 +353,8 @@
                   <description/>
                   <tags/>
                   <detail>
-                     <field label="TaskProperties Parameters"
-                            name="taskProperties"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
-                     <field label="Output Parameters"
-                            name="output"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
-                     <field label="Fault"
-                            name="fault"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
                   </detail>
                </processObject>
                <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
@@ -391,40 +364,20 @@
                   <description/>
                   <tags/>
                   <detail>
-                     <field label="Output Parameters"
-                            name="output"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
-                     <field label="Fault"
-                            name="fault"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
                   </detail>
                </processObject>
                <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
-                              displayName="hkfl-4ApJDPxKpM3fB6fyFzZxub"
+                              displayName="hkfl-9VvRujetSBjlIj0jdcCLyW"
                               isByCopy="true"
-                              name="hkfl-4ApJDPxKpM3fB6fyFzZxub">
+                              name="hkfl-9VvRujetSBjlIj0jdcCLyW">
                   <description/>
                   <tags/>
                   <detail>
-                     <field label="Fault"
-                            name="fault"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
-                     <field label="Input Parameters"
-                            name="input"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
-                     <field label="Output Parameters"
-                            name="output"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                     <field label="Input Parameters" name="input" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
                   </detail>
                </processObject>
                <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
@@ -434,47 +387,26 @@
                   <description>This process object represents a taskflow specific command task output field details.</description>
                   <tags/>
                   <detail>
-                     <field label="Output Parameters"
-                            name="output"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
-                     <field label="Fault"
-                            name="fault"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
                   </detail>
                </processObject>
                <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
-                              displayName="PCTask-Demo1"
+                              displayName="PC-Task"
                               isByCopy="true"
-                              name="PCTask-Demo1">
+                              name="PC-Task">
                   <description/>
                   <tags/>
                   <detail>
-                     <field label="InOut Parameters"
-                            name="inout"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
-                     <field label="Output Parameters"
-                            name="output"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
-                     <field label="Fault"
-                            name="fault"
-                            nullable="true"
-                            required="false"
-                            type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
                   </detail>
                </processObject>
             </dependencies>
          </taskflow>
       </types1:Entry>
-      <types1:GUID>8b0lRVyW16XfpTkPjKxvSA</types1:GUID>
+      <types1:GUID>6BYJ1sJRbstcFw82A8XTuW</types1:GUID>
       <types1:DisplayName>PODValTaskflowUpdateExecute</types1:DisplayName>
    </types1:Item>
-   <types1:CurrentServerDateTime>2022-02-02T13:29:06.647Z</types1:CurrentServerDateTime>
+   <types1:CurrentServerDateTime>2022-02-03T11:13:19.66Z</types1:CurrentServerDateTime>
 </aetgt:getResponse>
