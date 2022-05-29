@@ -13,8 +13,8 @@
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "",
-        "contentType" : "Binary",
+        "description" : "hi",
+        "contentType" : "application/json; charset=utf-8",
         "documentState" : "VALID"
       }
     }
