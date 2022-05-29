@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "cA48fjDJnM3intQlxpfty2",
+    "id" : "8A5ItxCJZpwf2iN3ealeYQ",
     "name" : "DSS_Auto",
     "type" : "DSS",
     "metadata" : {
@@ -9,14 +9,14 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01000M0I00000000004V"
+        "repoHandle" : "013OZQ0I000000000005"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "Hello",
+        "description" : "",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
@@ -24,7 +24,7 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "3tfpEH4x8pEhtFnj5JejG9",
+    "id" : "8I7DojBGZ8licFVefXTWgW",
     "name" : "HKFF",
     "type" : "Connection",
     "metadata" : {
@@ -33,7 +33,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01000M0B000000000004"
+        "repoHandle" : "013OZQ0B00000000000R"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -44,7 +44,7 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "3OnryBdq4IYjcxBfYat1MC",
+    "id" : "emcHf83MmKBhmQhY8NO6ca",
     "name" : "HKSF_src",
     "type" : "Connection",
     "metadata" : {
@@ -53,7 +53,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01000M0B000000000005"
+        "repoHandle" : "013OZQ0B00000000000S"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
