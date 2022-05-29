@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "8A5ItxCJZpwf2iN3ealeYQ",
+    "id" : "1FIEUNHFD44fnpguH9Fa8e",
     "name" : "DSS_Auto",
     "type" : "DSS",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "013OZQ0I000000000005"
+        "repoHandle" : "014VJG0I000000000006"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,8 +24,8 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "8I7DojBGZ8licFVefXTWgW",
-    "name" : "HKFF",
+    "id" : "2TYNBlBRHdOlU9XvYu2Aai",
+    "name" : "HKSF_src",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -33,7 +33,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "013OZQ0B00000000000R"
+        "repoHandle" : "014VJG0B00000000000D"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -44,8 +44,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "emcHf83MmKBhmQhY8NO6ca",
-    "name" : "HKSF_src",
+    "id" : "6HzSZOXHa6JlsyvO7x2x4I",
+    "name" : "HKFF",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -53,7 +53,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "013OZQ0B00000000000S"
+        "repoHandle" : "014VJG0B00000000000C"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
