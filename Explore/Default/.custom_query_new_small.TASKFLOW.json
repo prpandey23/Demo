@@ -1,0 +1,44 @@
+{
+  "objectInfo" : {
+    "id" : "6EZsXS9Ft2dhuAqftJMswY",
+    "name" : "custom_query_new_small",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "KsTSicjumf6S3wO-gt-79629-2022-05-31T16:41:02.459Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ {
+    "id" : "av0ycrttfvQjpHJjAwflEb",
+    "name" : "custom_query_new_mtTask",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "013OZQ0Z00000000002G"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/sasikanth_2021.10M/custom_query"
+  } ]
+}
