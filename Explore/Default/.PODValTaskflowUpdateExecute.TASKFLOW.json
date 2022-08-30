@@ -32,7 +32,10 @@
       "repoInfo" : {
         "repoHandle" : "013OZQ0I000000000005"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "",
         "contentType" : "JSON",
@@ -52,7 +55,7 @@
       "repoInfo" : {
         "repoHandle" : "27053"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ ],
       "additionalInfo" : {
         "description" : "",
         "contentType" : "Binary",
@@ -72,7 +75,10 @@
       "repoInfo" : {
         "repoHandle" : "013OZQ0Z000000000025"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "",
         "contentType" : "JSON",
@@ -92,7 +98,10 @@
       "repoInfo" : {
         "repoHandle" : "013OZQ0K000000000007"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : null,
         "contentType" : "JSON",
